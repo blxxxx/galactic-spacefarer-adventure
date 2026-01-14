@@ -1,26 +1,26 @@
 ## Application Details
-|               |
-| ------------- |
-|**Generation Date and Time**<br>Wed Jan 14 2026 18:39:04 GMT+0100 (közép-európai téli idő)|
-|**App Generator**<br>SAP Fiori Application Generator|
-|**App Generator Version**<br>1.20.0|
-|**Generation Platform**<br>Visual Studio Code|
-|**Template Used**<br>List Report Page V4|
-|**Service Type**<br>Local CAP|
-|**Service URL**<br>http://localhost:4004/odata/v4/intergalactic/|
-|**Module Name**<br>galactic-spacefarer-explorer|
-|**Application Title**<br>Galactik SpaceFarer Explorer|
-|**Namespace**<br>my.space|
-|**UI5 Theme**<br>sap_horizon|
-|**UI5 Version**<br>1.143.2|
-|**Enable Code Assist Libraries**<br>False|
-|**Enable TypeScript**<br>True|
-|**Add Eslint configuration**<br>False|
-|**Main Entity**<br>SpaceFarer|
+|                                                                                            |
+| ------------------------------------------------------------------------------------------ |
+| **Generation Date and Time**<br>Wed Jan 14 2026 18:39:04 GMT+0100 (közép-európai téli idő) |
+| **App Generator**<br>SAP Fiori Application Generator                                       |
+| **App Generator Version**<br>1.20.0                                                        |
+| **Generation Platform**<br>Visual Studio Code                                              |
+| **Template Used**<br>List Report Page V4                                                   |
+| **Service Type**<br>Local CAP                                                              |
+| **Service URL**<br>http://localhost:4004/odata/v4/intergalactic/                           |
+| **Module Name**<br>galactic-spacefarer-explorer                                            |
+| **Application Title**<br>Galactic SpaceFarer Explorer                                      |
+| **Namespace**<br>my.space                                                                  |
+| **UI5 Theme**<br>sap_horizon                                                               |
+| **UI5 Version**<br>1.143.2                                                                 |
+| **Enable Code Assist Libraries**<br>False                                                  |
+| **Enable TypeScript**<br>True                                                              |
+| **Add Eslint configuration**<br>False                                                      |
+| **Main Entity**<br>SpaceFarer                                                              |
 
 ## galactic-spacefarer-explorer
 
-Galactik SpaceFarer Explorer App
+Galactic SpaceFarer Explorer App
 
 ### Starting the generated app
 
