@@ -1,25 +1,70 @@
-# Getting Started
+# Galactic Spacefarer Adventure
 
-Welcome to your new project.
+A SAP Cloud Application Programming (CAP) Model project designed to manage the profiles of intergalactic spacefarers. This application provides a comprehensive system for tracking spacefarer details, skills, and organizational roles across the galaxy.
 
-It contains these folders and files, following our recommended project layout:
+## Features
 
-File or Folder | Purpose
----------|----------
-`app/` | content for UI frontends goes here
-`db/` | your domain models and data go here
-`srv/` | your service models and code go here
-`package.json` | project metadata and configuration
-`readme.md` | this getting started guide
+### 🚀 Spacefarer Management
+- **Profile Management**: CRUD operations for Spacefarer entities.
+- **Detailed Attributes**: Track attributes such as:
+  - Name & Email
+  - Suite Color
+  - Stardust Collection Count
+  - Wormhole Navigation Skill
+  - Origin Planet
 
+### 🛡️ Data Validation & Integrity
+- **Input Validation**: 
+  - Mandatory fields ensure data completeness.
+  - **Email Format**: Strict regex-based validation for email addresses.
+  - **Skill Ranges**: Wormhole Navigation Skill is validated to be within a 0-10 scale.
+- **Relational Data**: Strong associations between Spacefarers and their:
+  - **Departments** (e.g., Exploration, Defense)
+  - **Positions** (e.g., Captain, Navigator)
+  - **Origin Planets**
 
-## Next Steps
+### 💻 User Interface (Fiori Elements)
+- **Draft-Enabled**: Support for draft editing states.
+- **List Report**: Overview of all spacefarers with key metrics.
+- **Object Page**: Detailed view separated into logical sections:
+  - **General Information**: Personal and skill-based details.
+  - **Job Details**: Department and Position assignments.
+- **Value Helps**: Integrated dropdowns and value maps for selecting Departments, Positions, and Planets.
+- **Localization**: Full i18n support for UI labels and error messages.
 
-- Open a new terminal and run `cds watch`
-- (in VS Code simply choose _**Terminal** > Run Task > cds watch_)
-- Start adding content, for example, a [db/schema.cds](db/schema.cds).
+## Project Structure
 
+- `db/`: Domain models (schema definitions) and mock data (CSV).
+- `srv/`: Service definitions and application logic.
+- `package.json`: Project configuration and dependencies.
 
-## Learn More
+## Key Technologies
 
-Learn more at https://cap.cloud.sap/docs/get-started/.
+- **SAP CAP (Cloud Application Programming Model)**
+- **Node.js & TypeScript**
+- **Fiori Elements** (UI)
+
+## Getting Started
+
+### Prerequisites
+- Node.js
+- SAP CDS DK (`npm i -g @sap/cds-dk`)
+
+### Installation
+
+1. Clone the repository.
+2. Install dependencies:
+   ```bash
+   npm install
+   ```
+
+### Running Locally
+
+Start the local development server:
+
+```bash
+cds watch
+```
+
+- The server will start at `http://localhost:4004`.
+- The Fiori Preview is available to test the UI.
