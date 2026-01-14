@@ -79,6 +79,11 @@ To verify the security policies locally, use the following pre-configured mock u
    npm install
    ```
 
+3. Initialize the SQLite database:
+   ```bash
+   cds deploy --to sqlite
+   ```
+
 ### Running Locally
 
 Start the local development server:
@@ -88,4 +93,5 @@ cds watch
 ```
 
 - The server will start at `http://localhost:4004`.
+- The application uses the local `db.sqlite` database.
 - The Fiori Preview is available to test the UI.
