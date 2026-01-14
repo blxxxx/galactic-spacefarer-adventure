@@ -1,6 +1,7 @@
 using {my.space as db} from '../db/schema';
 
 
+@requires: 'authenticated-user'
 service IntergalacticService {
     @odata.draft.enabled
     entity SpaceFarer as

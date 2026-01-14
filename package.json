@@ -20,5 +20,24 @@
   "private": true,
   "imports": {
     "#cds-models/*": "./@cds-models/*/index.js"
+  },
+  "cds": {
+    "requires": {
+      "auth": {
+        "kind": "mocked",
+        "users": {
+          "alice": {
+            "attr": {
+              "originPlanet": "EARTH"
+            }
+          },
+          "bob": {
+            "attr": {
+              "originPlanet": "MARS"
+            }
+          }
+        }
+      }
+    }
   }
 }

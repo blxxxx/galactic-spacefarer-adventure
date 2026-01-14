@@ -32,10 +32,28 @@ A SAP Cloud Application Programming (CAP) Model project designed to manage the p
 - **Value Helps**: Integrated dropdowns and value maps for selecting Departments, Positions, and Planets.
 - **Localization**: Full i18n support for UI labels and error messages.
 
+### 🔒 Security & Authorization
+- **Authentication**: Service requires authenticated users (`@requires: 'authenticated-user'`).
+- **Row-Level Security**:
+  - Access to `SpaceFarer` and `Planet` entities is restricted based on the user's `originPlanet` attribute.
+  - Users can only view data related to their own origin planet.
+
+### 👤 Mock Users (for Testing)
+To verify the security policies locally, use the following pre-configured mock users:
+- **Alice**: 
+  - **Attribute**: `originPlanet = 'EARTH'`
+  - **Access**: Can only view spacefarers from Earth.
+- **Bob**: 
+  - **Attribute**: `originPlanet = 'MARS'`
+  - **Access**: Can only view spacefarers from Mars.
+
 ## Project Structure
 
 - `db/`: Domain models (schema definitions) and mock data (CSV).
-- `srv/`: Service definitions and application logic.
+- `srv/`
+  - `intergalactic-service.cds`: Service definitions.
+  - `intergalactic-service-security.cds`: Security policies.
+  - `i18n/`: Localization files for UI labels and messages.
 - `package.json`: Project configuration and dependencies.
 
 ## Key Technologies

@@ -1,0 +1,21 @@
+{
+    "xsappname": "galactic-spacefarer-adventure",
+    "tenant-mode": "dedicated",
+    "description": "Security profile for Galactic Spacefarer Adventure",
+    "attributes": [
+        {
+            "name": "originPlanet",
+            "description": "The planet the user belongs to",
+            "valueType": "s"
+        }
+    ],
+    "role-templates": [
+        {
+            "name": "SpaceFarerRole",
+            "description": "Role for space travelers",
+            "attribute-references": [
+                "originPlanet"
+            ]
+        }
+    ]
+}
