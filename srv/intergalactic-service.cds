@@ -39,6 +39,11 @@ annotate IntergalacticService.SpaceFarer with @(
                 Target: '@UI.FieldGroup#JobDetails'
             }
         ],
+        SelectionFields       : [
+            name,
+            position_ID,
+            department_ID
+        ],
         FieldGroup #General   : {Data: [
             {Value: name},
             {Value: email},
