@@ -1,0 +1,1 @@
+using IntergalacticService as service from '../../srv/intergalactic-service';

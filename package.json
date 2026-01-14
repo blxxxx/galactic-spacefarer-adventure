@@ -12,10 +12,12 @@
     "@types/node": "^24.0.0",
     "tsx": "^4",
     "typescript": "^5",
-    "@cap-js/cds-typer": ">=0.1"
+    "@cap-js/cds-typer": ">=0.1",
+    "cds-plugin-ui5": "^0.13.0"
   },
   "scripts": {
-    "start": "cds-serve"
+    "start": "cds-serve",
+    "watch-galactic-spacefarer-explorer": "cds watch --open my.space.galacticspacefarerexplorer/index.html?sap-ui-xx-viewCache=false --livereload false"
   },
   "private": true,
   "imports": {
@@ -45,5 +47,11 @@
         }
       }
     }
-  }
+  },
+  "workspaces": [
+    "app/*"
+  ],
+  "sapux": [
+    "app/galactic-spacefarer-explorer"
+  ]
 }
