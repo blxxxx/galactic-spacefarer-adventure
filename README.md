@@ -18,6 +18,9 @@ A SAP Cloud Application Programming (CAP) Model project designed to manage the p
   - Mandatory fields ensure data completeness.
   - **Email Format**: Strict regex-based validation for email addresses.
   - **Skill Ranges**: Wormhole Navigation Skill is validated to be within a 0-10 scale.
+  - **Position Requirements**: 
+    - Ensures Spacefarer meets `minStardust` and `minWormholeNavigationSkill` required for their position.
+    - Validates on both **CREATE** and **UPDATE** operations.
 - **Relational Data**: Strong associations between Spacefarers and their:
   - **Departments** (e.g., Exploration, Defense)
   - **Positions** (e.g., Captain, Navigator)
