@@ -27,6 +27,8 @@ A SAP Cloud Application Programming (CAP) Model project designed to manage the p
   - **Origin Planets**
 
 ### 💻 User Interface (Fiori Elements)
+
+**App: Galactic SpaceFarer Explorer**
 - **Draft-Enabled**: Support for draft editing states.
 - **List Report**: Overview of all spacefarers with key metrics.
 - **Object Page**: Detailed view separated into logical sections:
@@ -52,12 +54,14 @@ To verify the security policies locally, use the following pre-configured mock u
 
 ## Project Structure
 
-- `db/`: Domain models (schema definitions) and mock data (CSV).
-- `srv/`
-  - `intergalactic-service.cds`: Service definitions.
-  - `intergalactic-service-security.cds`: Security policies.
-  - `i18n/`: Localization files for UI labels and messages.
-- `package.json`: Project configuration and dependencies.
+- `app/`:
+   - `galactic-spacefarer-explorer/`: Main Fiori application for exploring spacefarers.
+ - `db/`: Domain models (schema definitions) and mock data (CSV).
+ - `srv/`
+   - `intergalactic-service.cds`: Service definitions.
+   - `intergalactic-service-security.cds`: Security policies.
+   - `i18n/`: Localization files for UI labels and messages.
+ - `package.json`: Project configuration and dependencies.
 
 ## Key Technologies
 
@@ -94,4 +98,5 @@ cds watch
 
 - The server will start at `http://localhost:4004`.
 - The application uses the local `db.sqlite` database.
-- The Fiori Preview is available to test the UI.
+- **Launch the Web App**: [Galactic SpaceFarer Explorer](http://localhost:4004/my.space.galacticspacefarerexplorer/index.html)
+- The generic Fiori Preview is also available.
