@@ -31,6 +31,7 @@ A SAP Cloud Application Programming (CAP) Model project designed to manage the p
 **App: Galactic SpaceFarer Explorer**
 - **Draft-Enabled**: Support for draft editing states.
 - **List Report**: Overview of all spacefarers with key metrics.
+  - **Default View**: Restricted to 3 items initially.
 - **Filtering**: Dedicated selection fields to filter by:
   - **Name**
   - **Position**

@@ -27,6 +27,11 @@ annotate IntergalacticService.SpaceFarer with @(
             Title         : {Value: name},
             Description   : {Value: position.title}
         },
+        PresentationVariant   : {
+            $Type         : 'UI.PresentationVariantType',
+            MaxItems      : 3,
+            Visualizations: ['@UI.LineItem']
+        },
         Facets                : [
             {
                 $Type : 'UI.ReferenceFacet',
