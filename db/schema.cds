@@ -8,7 +8,7 @@ using {
 entity SpaceFarer : cuid, managed {
     key ID                      : UUID;
         name                    : String(20)                                 @mandatory;
-        email                   : String(100)                                @mandatory  @assert.format: '^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$';
+        email                   : String(100)                                @mandatory  @assert.format: '^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$'  @assert.format.message: 'Invalid email format';
         suiteColor              : String(20)                                 @mandatory;
         collectedStardust       : Integer                                    @mandatory;
         wormholeNavigationSkill : Integer                                    @mandatory  @assert.range : [
