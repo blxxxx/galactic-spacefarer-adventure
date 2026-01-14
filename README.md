@@ -110,6 +110,11 @@ cds watch
 
 To build the project for deployment to SAP BTP (Cloud Foundry environment), use the Cloud MTA Build Tool (MBT):
 
+**Install MBT**:
+   ```bash
+   npm install -g mbt
+   ```
+
 **Build the MTA Archive**:
    ```bash
    mbt build
