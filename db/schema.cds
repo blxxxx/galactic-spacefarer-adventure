@@ -20,19 +20,21 @@ entity SpaceFarer : cuid, managed {
         originPlanet            : Association to one Planet                  @mandatory;
 }
 
+@cds.autoexpose
 entity Planet {
     key ID   : String(20);
         name : String(20);
 }
 
+@cds.autoexpose
 entity IntergalacticDepartment {
     key ID          : UUID;
         name        : String(20);
         description : String(200);
-        spacefarers : Association to many SpaceFarer
-                          on spacefarers.department = $self;
+
 }
 
+@cds.autoexpose
 entity IntergalacticPosition {
     key ID                         : UUID;
         title                      : String(50);
