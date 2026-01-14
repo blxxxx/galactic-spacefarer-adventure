@@ -17,5 +17,10 @@
         "./@cds-models/*"
       ]
     }
-  }
+  },
+  "exclude": [
+    "node_modules",
+    "gen",
+    "**/eslint.config.mjs"
+  ]
 }
