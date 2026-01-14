@@ -105,3 +105,13 @@ cds watch
 - The application uses the local `db.sqlite` database.
 - **Launch the Web App**: [Galactic SpaceFarer Explorer](http://localhost:4004/my.space.galacticspacefarerexplorer/index.html)
 - The generic Fiori Preview is also available.
+
+### Building for Production
+
+To build the project for deployment to SAP BTP (Cloud Foundry environment), use the Cloud MTA Build Tool (MBT):
+
+**Build the MTA Archive**:
+   ```bash
+   mbt build
+   ```
+   This generates a `galactic-spacefarer-adventure_1.0.0.mtar` file in the `mta_archives/` directory.
